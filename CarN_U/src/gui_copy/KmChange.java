@@ -8,13 +8,14 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class KmChange extends JFrame implements ActionListener{
 	
 	JTextField newKm = new JTextField();
 	JButton button = new JButton("Submit");
-	public KmChange(CarInfo parentFrame) {
+	public KmChange(JPanel carInfo) {
 		
 		
 		newKm.setFont(new Font(null, Font.PLAIN, 30));
@@ -30,7 +31,7 @@ public class KmChange extends JFrame implements ActionListener{
 		setLayout(new FlowLayout());
 		setTitle("Set Km");
 		pack();
-		setLocationRelativeTo(parentFrame);
+		setLocationRelativeTo(carInfo);
 		setVisible(true);
 		
 		
@@ -43,8 +44,13 @@ public class KmChange extends JFrame implements ActionListener{
 		
 	}
 	
-	public int returnKm() {
-		return Integer.valueOf(newKm.getText());
+	public int returnKm(int oldKm) {
+		try {
+			return Integer.valueOf(newKm.getText());
+		} catch (Exception e) {
+			return oldKm;
+		}
+		
 	}
 	
 	

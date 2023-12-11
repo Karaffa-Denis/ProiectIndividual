@@ -63,6 +63,10 @@ public class Car {
 		this.arr = arr;
 	}
 	
+	public void setServiceVar(int index, int newNr) {
+		this.arr.set(index, newNr);
+	}
+	
 	
 	
 	

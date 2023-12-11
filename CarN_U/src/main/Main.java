@@ -1,7 +1,6 @@
 package main;
 
 
-import gui_copy.KmChange;
 import gui_copy.MainFrame1;
 
 public class Main {
