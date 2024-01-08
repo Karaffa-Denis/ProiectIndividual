@@ -8,6 +8,8 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
+import javax.swing.SwingConstants;
+import java.awt.SystemColor;
 
 public class ServicePanel extends JPanel{
 	private static final long serialVersionUID = 1L;
@@ -19,6 +21,9 @@ public class ServicePanel extends JPanel{
 	public ServicePanel(String name, int maxKm, int remainingKm) {
 		//label creation
 		label = new JLabel(name);
+		label.setBackground(SystemColor.scrollbar);
+		label.setFont(new Font("Sylfaen", Font.PLAIN, 15));
+		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setPreferredSize(new Dimension(0,30));
 		
 
@@ -30,7 +35,7 @@ public class ServicePanel extends JPanel{
 		bar.setStringPainted(true);
 		bar.setFont(new Font(null, Font.BOLD, 15));
 		bar.setValue(remainingKm);
-		bar.setBackground(Color.lightGray);
+		bar.setBackground(SystemColor.controlHighlight);
 		if(remainingKm >= maxKm/2)
 			bar.setForeground(new Color(0x2d9428));
 		else if(remainingKm<maxKm/2 && remainingKm>= maxKm/4)
@@ -40,10 +45,10 @@ public class ServicePanel extends JPanel{
 		bar.setString(remainingKm + "/ " + maxKm);
 		
 
-		setBackground(null);
+		setBackground(Color.LIGHT_GRAY);
 		setLayout(new BorderLayout());
 		setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.gray));
-		setPreferredSize(new Dimension(200,150));
+		
 		add(label,BorderLayout.NORTH);
 	
 		add(bar, BorderLayout.SOUTH);
@@ -60,5 +65,8 @@ public class ServicePanel extends JPanel{
 			bar.setForeground(Color.yellow);
 		else bar.setForeground(Color.red);
 		bar.setString(remainingKm + "/ " + maxKm);
+	}
+	public int returnKm() {
+		return remainingKm;
 	}
 }

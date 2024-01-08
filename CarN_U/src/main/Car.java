@@ -10,6 +10,7 @@ public class Car {
 	Combustibil comb;
 	int km;
 	ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(10000, 35000, 55000, 40000, 90000, 15000, 365, 365));
+	
 	public Car(String marca, String model, int an, Combustibil comb, int km) {
 		super();
 		this.marca = marca;

@@ -1,12 +1,9 @@
 package main;
 
-
-import gui_copy.MainFrame1;
-
+import gui_copy.Login;
 public class Main {
 	public static void main(String[] args) {
-		new MainFrame1();
 		
-		
+		new Login();
 	}
 }
