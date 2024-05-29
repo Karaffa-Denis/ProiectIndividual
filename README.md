@@ -17,5 +17,4 @@ urma expirarea acestora
 ● reminderuri in legatura cu mentenanta, cat si expirarea itp-ului,
 rovinietei
 
-● o pagina prin care utilizatorul poate adauga notite si "to-do-uri"
-referitoare la masina si la mentenanta acesteia
+● o pagina prin care utilizatorul poate accesa un site de programare a ITP-ului.
