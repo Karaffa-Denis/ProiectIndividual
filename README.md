@@ -1,5 +1,4 @@
-
-3. Aplicatie de gestionare a datelor de service ale masinii personale, cat si a ITP-ului, rovinietei. Aplicatia va avea mai multe pagini, dedicate functionalitatiilor necesare.
+Aplicatie de gestionare a datelor de service ale masinii personale, cat si a ITP-ului, rovinietei. Aplicatia va avea mai multe pagini, dedicate functionalitatiilor necesare.
 Concepte introduse:
 
 ● Utilizarea unui GUI pentru folosirea aplicatiei
